@@ -3,3 +3,4 @@ __pycache__
 */pre_web_app/
 *.egg-info
 build/
+dist/
