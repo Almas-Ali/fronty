@@ -378,6 +378,10 @@ btn:hover {
     text-transform: capitalize;
 }
 
+.text-light {
+    color: #fff !important;
+}
+
 
 .list-display {
     padding-left: 35px;
@@ -537,11 +541,6 @@ footer a:hover {
     color: #b93a04;
 }
 
-.code-install {
-    color: #f8763e;
-    font-weight: 600;
-}
-
 .code-bullet {
     background-color: #88888b;
     color: #fff;
@@ -551,8 +550,8 @@ footer a:hover {
 }
 
 .code-area {
-    background-color: #374151;
-    color: #fff !important;
+    background-color: #414d61;
+    color: #fff;
     padding: 15px;
     border-radius: 8px;
     margin: 20px 0;
@@ -560,9 +559,10 @@ footer a:hover {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     line-height: 20px;
-    overflow: auto;
-    max-height: 300px;
 
+}
+code {
+    color: #fff;
 }
 
 .code-btn-config {

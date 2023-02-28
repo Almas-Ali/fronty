@@ -32,103 +32,95 @@
             <h1>Fronty Documentation</h1>
 
             <p>
-                As fronty is a very simple framework, it is very easy to use. You can easily create a website using. It is mainly focused on the frontend part. So, we haven't add any backend features. But, you can easily add backend features using any backend framework like Flask, Django, etc.
+                As fronty is a very simple framework, it is very easy to use. You can easily create a website using. It
+                is mainly focused on the frontend part. So, we haven't add any backend features. But, you can easily add
+                backend features using any backend framework like Flask, Django, etc.
                 <br>
-                But, we are working on a backend framework for fronty named <strong>backkr</strong>. And we are also working on a database framework named <strong>FlexDB</strong>. So, you can easily create a full stack website with database using <strong>Fronty</strong> in only Python technology without knowing any kind of web technologies like HTML, CSS, and JavaScript.
+                But, we are working on a backend framework for fronty named <strong>backkr</strong>. And we are also
+                working on a database framework named <strong>FlexDB</strong>. So, you can easily create a full stack
+                website with database using <strong>Fronty</strong> in only Python technology without knowing any kind
+                of web technologies like HTML, CSS, and JavaScript.
             </p>
-            <h3>Starter template</>
-            <div class="feature-box">
-                <code>
+            <p>
+                Here we will use flask as a backend framework for making this documentation short. But, you can use any
+                backend framework you want. We will update this documentation when we release <strong>backkr</strong>
+                and <strong>FlexDB</strong>. So, stay tuned.
+            </p>
+            <h3>Starter template</h3>
+            <div class="code-area">
+                <button class="code-btn-config code-btn-copy" id="starter-btn">📋</button>
+                <pre>
+<code id="starter-text">
+from flask import Flask, request
+from fronty.html import *
 
-                </code>
-            </div>
-           
-            <!--
-            <div class="boxes">
-                <div class="success-box">
-                    <h4>Easy to use</h4>
-                    <p>
-                        Fronty is a simple, lightweight, and fast website framework written in Python.
-                        <br>
-                        It is designed to be easy to use and easy to learn. It is also designed to be easy to extend and
-                        customize.
-                        <br>
-                        Fronty is a great choice for beginners and experts alike.
-                        <br>
-                        Fronty is also a great choice for people who want to learn how to make websites.
-                        <br>
-                        Fronty is also a great choice for people who want to learn how to make websites with Python and
-                        without
-                        knowing any kind of web technologies like HTML, CSS, and JavaScript.
-                    </p>
-                </div>
-                <div class="warning-box">
-                    <h4>Simple</h4>
-                    <p>
-                        Fronty is designed to be easy to use. It is designed to be easy to learn. It is designed to be
-                        easy to extend and customize.
-                        <br>
-                        Fronty is a great choice for beginners and experts alike.
-                        <br>
-                        Fronty is also a great choice for people who want to learn how to make websites.
-                        <br>
-                        Fronty is also a great choice for people who want to learn how to make websites with Python and
-                        without knowing any kind of web technologies like HTML, CSS, and JavaScript.
-                    </p>
-                </div>
-                <div class="danger-box">
-                    <h4>Lightweight</h4>
-                    <p>
-                        Fronty is designed to be easy to use. It is designed to be easy to learn. It is designed to be
-                        easy to extend and customize.
-                        <br>
-                        Fronty is a great choice for beginners and experts alike.
-                        <br>
-                        Fronty is also a great choice for people who want to learn how to make websites.
-                        <br>
-                        Fronty is also a great choice for people who want to learn how to make websites with Python and
-                        without knowing any kind of web technologies like HTML, CSS, and JavaScript.
-                    </p>
-                </div>
-                <div class="feature-box">
-                    <h4>Fast</h4>
-                    <p>
-                        Fronty is designed to be easy to use. It is designed to be easy to learn. It is designed to be
-                        easy to extend and customize.
-                        <br>
-                        Fronty is a great choice for beginners and
-                        experts alike.
-                        <br>
-                        Fronty is also a great choice for people who want to learn how to make websites.
-                        <br>
-                        Fronty is also a great choice for people who want to learn how to make websites with Python and
-                        without knowing any kind of web technologies like HTML, CSS, and JavaScript.
-                    </p>
-                </div>
-                <div class="code-box">
-                    <div class="code-area">
+app = Flask(__name__)
 
-                        <span class="code-comment"># This is a comment</span>
-                        <span class="code-keyword">def</span> <span class="code-function">main</span>():
-                        <span class="code-builtin-fuction">print</span>(<span class="code-string">"Hello World!"</span>)
 
-                        <pre>
-    <code>
-        <ol class="code-block">
-            <li class="code-comment"># This is a comment</li>
-            <li>
-                <span class="code-keyword">def</span> <span class="code-function">main</span> <span class="code-operator">():</span>
-            </li>
-            <li>
-                <span class="code-buildin-funtion">print</span>(<span class="code-string">"Hello World!"</span>)
-            </li>
-        </ol>
-    </code>
+def home(request) -> Html:
+    '''This is the home page view function'''
+    return Html(
+        Head(
+            Title('Home'),
+            Meta(charset='utf-8'),
+            Meta(name='viewport', content='width=device-width, initial-scale=1'),
+        ),
+        Body(
+            Element(
+                'center',
+                Element(
+                    'h1',
+                    'Welcome to Fronty!'
+                ),
+                Element(
+                    'p',
+                    'Fronty is a frontend web framework.'
+                ),
+            )
+        )
+    )
+
+
+@app.route('/')
+def index() -> str:
+    '''This is the home page view function'''
+    return home(
+        request=request,
+    ).render()
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+</code>
 </pre>
-                    </div>
-                </div>
             </div>
-            -->
+
+
+            <div>
+                <p>
+                    This is a starter template for fronty. You can use this template to create a basic website using
+                    fronty.
+                    <br>
+                    First, we import the Flask and request from flask. Then, we import Html, Head, Title, Meta, Body,
+                    Element from fronty.html package.
+                    <br>
+                    Then, we create a flask app. Then, we create a home view function. This view function will return
+                    a Html object. This Html object will contain the HTML code for the home page.
+                    <br>
+                    Then, we create a index view function. This view function will call the home view function and
+                    render the HTML code.
+                    <br>
+                    Then, we run the flask app.
+                </p>
+                <p>
+                    <strong>Fronty</strong> has a very simple syntax. You can easily create a website using it. It has
+                    some built-in element like <strong>Button, Link, Anchor</strong> etc. You can use these elements to
+                    create a website. You can also create your own element using the <strong>BaseElement</strong> class.
+                    We will see how to create a element in the customization section.
+                </p>
+            </div>
+
         </main>
 
 
@@ -138,7 +130,7 @@
             </p>
         </footer>
 
-        <script src="./static/main.js"></script>
+        <script src="./static/docs.js"></script>
     </body>
 
 </html>
