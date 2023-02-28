@@ -2,14 +2,17 @@
 
 Created by [**@Almas-Ali**](https://github.com/Almas-Ali)
 
-Documentation [Website](https://almas-ali.github.io/fronty/)
+Learn from the official [**`Documentation`**](https://almas-ali.github.io/fronty/)
 
 ## Installation
+
+Easy to install with pip.
 
 ```bash
 pip install fronty
 ```
 
-## Example
+## Example Projects
 
+[**`Basic Starter`**](https://github.com/Almas-Ali/fronty/tree/master/examples/starter%20project) <br>
 [**`Bootstrap Integration`**](https://github.com/Almas-Ali/fronty/tree/master/examples/Bootstrap%20integration)
