@@ -62,6 +62,13 @@ a:active {
     max-width: 960px;
     margin: 0 auto;
     margin-top: 75px;
+}
+
+.docs-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 75px;
     margin-left: 282px;
 }
 
@@ -641,6 +648,10 @@ aside li {
     }
 
     .container {
+        margin: 75px 20px;
+    }
+
+    .docs-container {
         padding: 0 20px;
     }
 
