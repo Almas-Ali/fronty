@@ -8,7 +8,8 @@ class BaseElement:
         return self.render()
 
     def render(self):
-        return f'<{self.tag} {self.render_attributes()}>{self.render_children()}</{self.tag}>'
+        _is_space = ' ' if self.render_attributes() else ''
+        return f'<{self.tag}{_is_space}{self.render_attributes()}>{self.render_children()}</{self.tag}>'
 
     def render_attributes(self):
         return ' '.join(f'{key}="{value}"' for key, value in self.attributes.items())
