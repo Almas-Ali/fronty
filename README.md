@@ -6,13 +6,12 @@ Learn from the official [**`Documentation`**](https://almas-ali.github.io/fronty
 
 ## Table of Contents
 
-- [Fronty - A frontend web framework](#fronty---a-frontend-web-framework)
-- [Table of Contents](#table-of-contents)
 - [What is Fronty?](#what-is-fronty)
 - [Installation](#installation)
 - [Example Projects](#example-projects)
 - [How to run the example projects](#how-to-run-the-example-projects)
 - [How to create a new project](#how-to-create-a-new-project)
+- [Contributing](#contributing)
 
 ## What is Fronty?
 
@@ -32,13 +31,11 @@ pip install fronty
 
 ![Screenshort_1](https://raw.githubusercontent.com/Almas-Ali/fronty/master/examples/starter%20project/screenshot_1.png "Starter Project Screenshot 1")
 
-[**`Bootstrap Integration`**](https://github.com/Almas-Ali/fronty/tree/master/examples/Bootstrap%20integration) 
+[**`Bootstrap Integration`**](https://github.com/Almas-Ali/fronty/tree/master/examples/Bootstrap%20integration)
 
 ![Screenshort_1](https://raw.githubusercontent.com/Almas-Ali/fronty/master/examples/Bootstrap%20integration/screenshot_1.png "Bootstrap Integration Screenshot 1")
 
-
 [**`Custom CSS Project`**](https://github.com/Almas-Ali/fronty/tree/master/examples/Custom%20CSS%20project)
-
 
 ![Screenshort_1](https://raw.githubusercontent.com/Almas-Ali/fronty/master/examples/Custom%20CSS%20Project/screenshot_1.png "Custom CSS Project Screenshot 1")
 
@@ -145,6 +142,6 @@ python app.py
 
 ## Contributing
 
-Pull requests are welcome. For any changes, please open an issue first to discuss what you would like to change. 
+Pull requests are welcome. For any changes, please open an issue first to discuss what you would like to change.
 
 **Thanks for using Fronty!**
