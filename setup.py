@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name='fronty',
-    version='0.0.1',
+    version='0.0.2',
     description='A frontend web framework',
     long_description_content_type='text/markdown',
     long_description=long_description,
