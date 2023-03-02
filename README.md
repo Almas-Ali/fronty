@@ -35,7 +35,7 @@ pip install fronty
 
 ![Screenshort_1](https://raw.githubusercontent.com/Almas-Ali/fronty/master/examples/Bootstrap%20integration/screenshot_1.png "Bootstrap Integration Screenshot 1")
 
-[**`Custom CSS Project`**](https://github.com/Almas-Ali/fronty/tree/master/examples/Custom%20CSS%20project)
+[**`Custom CSS Project`**](https://github.com/Almas-Ali/fronty/tree/master/examples/Custom%20CSS%20Project)
 
 ![Screenshort_1](https://raw.githubusercontent.com/Almas-Ali/fronty/master/examples/Custom%20CSS%20Project/screenshot_1.png "Custom CSS Project Screenshot 1")
 
