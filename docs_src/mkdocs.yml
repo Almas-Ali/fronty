@@ -1,0 +1,111 @@
+site_name: Fronty
+site_description: "Fronty is a simple, fast and lightweight front-end framework for faster and easier web development."
+site_author: "Md. Almas Ali"
+site_url: "https://almas-ali.github.io/fronty/"
+repo_url: "https://github.com/Almas-Ali/fronty"
+repo_name: "Almas-Ali/fronty"
+use_directory_urls: false
+
+theme:
+  name: material
+  custom_dir: "docs/theme"
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: "Switch to dark mode"
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+        name: "Switch to light mode"
+
+  features:
+    - content.tabs.link
+    - content.code.select
+    - content.code.copy
+    - content.tooltips
+    - search.suggest
+    - search.highlight
+    - navigation.path
+    - navigation.top
+
+  logo: "assets/images/logo.png"
+  favicon: "assets/images/favicon.ico"
+
+extra:
+  analytics:
+    provider: google
+    property: G-XJC75ENC9N
+
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Almas-Ali/fronty
+
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/md-almasali/
+
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/almasali
+
+    - icon: fontawesome/solid/globe
+      link: https://almasali.net
+
+  generator: false
+
+copyright: Build with love for the community © 2023
+
+plugins:
+  - search
+
+nav:
+  - Overview: index.md
+  - Installation: installation.md
+  - Quick Start: quick-start.md
+  - Components:
+      - Introduction: components/introduction.md
+      - HTML:
+          - Introduction: components/html/introduction.md
+          - Customized Elements: components/html/customized-elements.md
+      - CSS:
+          - Introduction: components/css/introduction.md
+          - Customized Elements: components/css/customized-elements.md
+      - JavaScript:
+          - Introduction: components/js/introduction.md
+          - Customized Elements: components/js/customized-elements.md
+  - Examples: examples.md
+  - Blog: blog/index.md
+  - Contribution: contribution.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
+  - markdown.extensions.codehilite:
+      guess_lang: false
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - admonition
+  - codehilite
+  - extra
+  - attr_list
+  - md_in_html
+  - abbr
+  - admonition
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
