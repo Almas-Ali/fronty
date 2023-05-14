@@ -25,11 +25,11 @@ class BaseElement:
     def class_(self, *args):
         self.attributes['class'] = ' '.join(args)
         return self
-    
+
     def id(self, id):
         self.attributes['id'] = id
         return self
-    
+
     def attr(self, key, value):
         self.attributes[key] = value
         return self
@@ -113,7 +113,7 @@ class Body(BaseElement):
 class Meta(BaseElement):
     def __init__(self, **attributes):
         super().__init__('meta', **attributes)
-    
+
 
 class Element(BaseElement):
     def __init__(self, tag, *children, **attributes):
@@ -126,6 +126,7 @@ class Link(BaseElement):
         self.attributes['type'] = 'text/css' if 'type' not in attributes else attributes['type']
         self.attributes['rel'] = 'stylesheet' if 'rel' not in attributes else attributes['rel']
         self.attributes['href'] = href
+
 
 class Anchor(BaseElement):
     def __init__(self, *children, **attributes):
@@ -149,9 +150,11 @@ class Input(BaseElement):
         super().__init__('input', *children, **attributes)
         self.attributes['type'] = 'text' if 'type' not in attributes else attributes['type']
 
+
 class Text(BaseElement):
     def __init__(self, *children, **attributes):
         super().__init__('p', *children, **attributes)
+
 
 class Break(BaseElement):
     def __init__(self, *children, **attributes):
@@ -159,6 +162,7 @@ class Break(BaseElement):
 
     def render(self):
         return '<br>'
+
 
 class Form(BaseElement):
     def __init__(self, *children, **attributes):
@@ -175,3 +179,227 @@ class Form(BaseElement):
     def enctype(self, enctype):
         self.attributes['enctype'] = enctype
         return self
+
+
+class Label(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('label', *children, **attributes)
+        self.attributes['for'] = attributes['for'] if 'for' in attributes else ''
+
+
+class Select(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('select', *children, **attributes)
+
+
+class Option(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('option', *children, **attributes)
+        self.attributes['value'] = attributes['value'] if 'value' in attributes else ''
+
+
+class Table(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('table', *children, **attributes)
+
+
+class Thead(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('thead', *children, **attributes)
+
+
+class Tbody(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('tbody', *children, **attributes)
+
+
+class Tr(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('tr', *children, **attributes)
+
+
+class Th(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('th', *children, **attributes)
+
+
+class Td(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('td', *children, **attributes)
+
+
+class H1(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('h1', *children, **attributes)
+
+
+class H2(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('h2', *children, **attributes)
+
+
+class H3(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('h3', *children, **attributes)
+
+
+class H4(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('h4', *children, **attributes)
+
+
+class H5(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('h5', *children, **attributes)
+
+
+class H6(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('h6', *children, **attributes)
+
+
+class Ul(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('ul', *children, **attributes)
+
+
+class Ol(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('ol', *children, **attributes)
+
+    
+class Li(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('li', *children, **attributes)
+
+    
+class Span(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('span', *children, **attributes)
+
+
+class Div(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('div', *children, **attributes)
+
+    
+class Nav(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('nav', *children, **attributes)
+
+
+class Footer(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('footer', *children, **attributes)
+
+
+class Header(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('header', *children, **attributes)
+
+
+class Section(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('section', *children, **attributes)
+
+
+class Article(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('article', *children, **attributes)
+
+
+class Aside(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('aside', *children, **attributes)
+
+
+class Main(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('main', *children, **attributes)
+
+
+class Figure(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('figure', *children, **attributes)
+
+
+class Figcaption(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('figcaption', *children, **attributes)
+
+
+class Dl(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('dl', *children, **attributes)
+
+
+class Dt(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('dt', *children, **attributes)
+
+
+class Dd(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('dd', *children, **attributes)
+
+
+class Small(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('small', *children, **attributes)
+
+
+class Time(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('time', *children, **attributes)
+
+
+class Strong(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('strong', *children, **attributes)
+
+
+class Em(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('em', *children, **attributes)
+
+
+class Mark(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('mark', *children, **attributes)
+
+
+class Code(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('code', *children, **attributes)
+
+
+class Pre(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('pre', *children, **attributes)
+
+
+class Blockquote(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('blockquote', *children, **attributes)
+
+        
+class Iframe(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('iframe', *children, **attributes)
+
+
+class Video(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('video', *children, **attributes)
+
+
+class Audio(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('audio', *children, **attributes)
+
+
+class Source(BaseElement):
+    def __init__(self, *children, **attributes):
+        super().__init__('source', *children, **attributes)
+
+
