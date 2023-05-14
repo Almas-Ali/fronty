@@ -2,48 +2,11 @@ from fronty.html import *
 
 
 def navbar(request, **data) -> Element:
-    '''
-    This is the navbar component from bootstrap 5.3 docs, Now converted to fronty.
+    '''This is the navbar component'''
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar scroll</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    '''
-
-    _layout = Element(
-        'nav',
-        Element(
-            'div',
+    # The navbar layout
+    _layout = Nav(
+        Div(
             Anchor(
                 'Fronty',
                 href='/',
@@ -52,50 +15,41 @@ def navbar(request, **data) -> Element:
                 Element('span').class_('navbar-toggler-icon'),
 
             ).class_('navbar-toggler').attr('type', 'button').attr('data-bs-toggle', 'collapse').attr('data-bs-target', '#navbarScroll').attr('aria-controls', 'navbarScroll').attr('aria-expanded', 'false').attr('aria-label', 'Toggle navigation'),
-            Element(
-                'ul',
-                Element(
-                    'li',
+            Ul(
+                Li(
                     Anchor(
                         'Home',
                         href='/',
                     ).class_('nav-link active').attr('aria-current', 'page'),
                 ).class_('nav-item'),
-                Element(
-                    'li',
+                Li(
                     Anchor(
                         'About',
                         href='/about',
                     ).class_('nav-link'),
                 ).class_('nav-item'),
-                Element(
-                    'li',
+                Li(
                     Anchor(
                         'More',
                         href='#',
                     ).class_('nav-link dropdown-toggle').attr('role', 'button').attr('data-bs-toggle', 'dropdown').attr('aria-expanded', 'false'),
-                    Element(
-                        'ul',
-                        Element(
-                            'li',
+                    Ul(
+                        Li(
                             Anchor(
                                 'Action',
                                 href='#',
                             ).class_('dropdown-item'),
                         ),
-                        Element(
-                            'li',
+                        Li(
                             Anchor(
                                 'Another action',
                                 href='#',
                             ).class_('dropdown-item'),
                         ),
-                        Element(
-                            'li',
+                        Li(
                             Element('hr').class_('dropdown-divider'),
                         ),
-                        Element(
-                            'li',
+                        Li(
                             Anchor(
                                 'Something else here',
                                 href='#',
@@ -121,6 +75,9 @@ def navbar(request, **data) -> Element:
 
 
 def layout(request, **data) -> Html:
+    '''This is the layout component'''
+
+    # The main layout
     return Html(
         Head(
             Title('Fronty'),  # Page title
@@ -139,6 +96,8 @@ def layout(request, **data) -> Html:
             navbar(request),
 
             # Main area of the page
+            # The main area of the page is passed as a parameter to the layout component.
+            # Get subcomponent from data or use default value
             data.get('content', 'Empty content'),
 
             # Bootstrap JS

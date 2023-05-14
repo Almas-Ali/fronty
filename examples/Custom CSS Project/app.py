@@ -6,12 +6,26 @@ from datetime import date
 # CSS components
 
 def style_css():
+    '''This is the style component'''
+
+    # The CSS() is used to create a CSS object.
     return CSS(
+
+        # The Selector() is used to create a CSS selector.
+        # Here we have used the universal selector to select all the elements.
+        # *{} means select all the elements.
+        # We have css properties inside the properties() method.
+        # Passed the css properties as keyword arguments.
+        # The properties() method returns a CSSProperties object.
         Selector('*').properties({
             'margin': '0',
             'padding': '0',
             'font-family': 'Roboto, sans-serif, Arial',
         }),
+
+        # Here we have selected the body tag.
+        # We have used the Selector('body') to select the body tag.
+        # Selector('body').properties({}) is used to add css properties to the body tag.
         Selector('body').properties({
             'background-color': '#d6d6e7',
         }),
@@ -76,6 +90,9 @@ def style_css():
 # Fronty components
 
 def layout(request, **data):
+    '''This is the layout component'''
+
+    # The Html() is used to create a HTML object.
     return Html(
         Head(
             Title('Custom CSS Project'),
@@ -87,33 +104,25 @@ def layout(request, **data):
             ),
         ),
         Body(
-            Element(
-                'nav',
-                Element(
-                    'ul',
-                    Element(
-                        'li',
+            Nav(
+                Ul(
+                    Li(
                         Anchor('Home', href='/'),
                     ),
-                    Element(
-                        'li',
+                    Li(
                         Anchor('About', href='/about'),
                     )
                 )
             ),
-            Element(
-                'div',
-                Element(
-                    'h1',
+            Div(
+                H1(
                     'Custom CSS Project',
                 ),
-                Element(
-                    'p',
+                Text(
                     'This is a custom CSS project using Fronty.',
                 ),
             ).class_('container'),
-            Element(
-                'footer',
+            Footer(
                 f'© {date.today().year} Fronty',
             ),
         )
@@ -125,6 +134,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    '''This is the home page view function'''
+
+    # The render() method is used to convert the python objects to HTML string.
     return layout(
         request=None,
     ).render()
