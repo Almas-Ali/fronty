@@ -2,67 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://almas-ali.github.io/fronty/index.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/contribution.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/examples.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/installation.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/quick-start.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/blog/index.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/components/introduction.html</loc>
-         <lastmod>2023-05-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://almas-ali.github.io/fronty/components/css/customized-elements.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/components/css/introduction.html</loc>
-         <lastmod>2023-05-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://almas-ali.github.io/fronty/components/html/customized-elements.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/components/html/introduction.html</loc>
-         <lastmod>2023-05-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://almas-ali.github.io/fronty/components/js/customized-elements.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://almas-ali.github.io/fronty/components/js/introduction.html</loc>
-         <lastmod>2023-05-09</lastmod>
+         <lastmod>2023-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://almas-ali.github.io/fronty/customization/customized-html.html</loc>
+         <lastmod>2023-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://almas-ali.github.io/fronty/projects/bootstrap-integration.html</loc>
+         <lastmod>2023-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://almas-ali.github.io/fronty/projects/custom-css-project.html</loc>
+         <lastmod>2023-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://almas-ali.github.io/fronty/projects/starter-project.html</loc>
+         <lastmod>2023-05-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
