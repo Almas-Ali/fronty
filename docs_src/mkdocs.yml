@@ -67,20 +67,23 @@ plugins:
 
 nav:
   - Overview: index.md
+  - Examples: examples.md
   - Installation: installation.md
   - Quick Start: quick-start.md
   - Components:
       - Introduction: components/introduction.md
       - HTML:
           - Introduction: components/html/introduction.md
-          - Customized Elements: components/html/customized-elements.md
       - CSS:
           - Introduction: components/css/introduction.md
-          - Customized Elements: components/css/customized-elements.md
       - JavaScript:
           - Introduction: components/js/introduction.md
-          - Customized Elements: components/js/customized-elements.md
-  - Examples: examples.md
+  - Customization: 
+      - HTML Customization: customization/customized-html.md
+  - Projects:
+      - Starter Project: projects/starter-project.md
+      - Bootstrap Integration: projects/bootstrap-integration.md
+      - Custom CSS Project: projects/custom-css-project.md
   - Blog: blog/index.md
   - Contribution: contribution.md
 
