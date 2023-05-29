@@ -68,7 +68,7 @@ class FormWidget(BaseWidget):
     def render(self):
         '''Renders the widget.'''
         if self._type in self.forms_type:
-            return self.__get_form()
+            return self.__get_form().render()
 
     def __get_form(self):
         '''Generates the form.'''
@@ -133,7 +133,7 @@ class FormWidget(BaseWidget):
             ) if self.load_css is True else html.Style(),
 
             html.Form(
-                self._element['first'],  # First loaded elements
+                self._element.get('first') if 'first' in self._element else '',
                 html.Div(
                     html.Label('Username'),
                     html.Input(type='text', name='username',
@@ -150,7 +150,7 @@ class FormWidget(BaseWidget):
                     html.Button('Submit')
                     .type('submit'),
                 ),
-                self._element['last'],  # Last loaded elements
+                self._element.get('last') if 'last' in self._element else '',
             )
             .attr('action', self._action)
             .attr('method', self._method)
@@ -201,7 +201,7 @@ class FormWidget(BaseWidget):
             ) if self.load_css is True else html.Style(),
 
             html.Form(
-                self._element['first'],
+                self._element.get('first') if 'first' in self._element else '',
 
                 html.Div(
                     html.Label('Username'),
@@ -217,6 +217,6 @@ class FormWidget(BaseWidget):
                     ),
                 ),
 
-                self._element['last'],  # Last loaded elements
+                self._element.get('last') if 'last' in self._element else '',
             ).id('form-object'),
         )
