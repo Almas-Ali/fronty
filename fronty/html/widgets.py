@@ -13,23 +13,38 @@ class BaseWidget(html.BaseElement):
 
     def __init__(self, *args, **kwargs):
         super().__init__(tag='', *args, **kwargs)
-        self._value = None
+        self._element: dict = {}
 
-    def add_element(self, element):
+    def add_element(self, element: html.Element, first=False):
         '''Adds an element to the widget.'''
-        self.append(element)
+        if first is True:
+            self._element['first'] = element.render()
+        else:
+            self._element['last'] = element.render()
+
+        return self
 
     def remove_element(self, element):
         '''Removes an element from the widget.'''
-        self.remove(element)
+        self._element.pop(element)
+        return self
 
-    def select_element(self, index):
+    def select_element(self, name: str = None, id: str = None, class_: str = None, index: int = None):
         '''Selects an element from the widget.'''
-        self.select(index)
+        if name is not None:
+            return self._element[name]
+        elif id is not None:
+            return self._element[id]
+        elif class_ is not None:
+            return self._element[class_]
+        elif index is not None:
+            return self._element[index]
+        else:
+            return self._element
 
-    def update_value(self, value):
-        '''Updates the value of the widget.'''
-        self._value = value
+    def __attr__(self, key, value):
+        self.attributes[key] = value
+        return self
 
 
 class FormWidget(BaseWidget):
@@ -46,11 +61,9 @@ class FormWidget(BaseWidget):
             'commentform',
         ]
         self._type = self.forms_type[0]
-        args = list(args)
-        if kwargs['load_css'] is True:
-            self.load_css = True
-        else:
-            self.load_css = False
+        self._action = kwargs['action'] if 'action' in kwargs else '#'
+        self._method = kwargs['method'] if 'method' in kwargs else 'post'
+        self.load_css = True if 'load_css' in kwargs else False
 
     def render(self):
         '''Renders the widget.'''
@@ -74,6 +87,8 @@ class FormWidget(BaseWidget):
 
     def __get_loginform(self):
         '''Login form.'''
+
+        # All login styles are here.
         styles = css.CSS(
             css.Selector('#form-object').properties({
                 'font-family': 'Arial, Helvetica, sans-serif'
@@ -109,13 +124,16 @@ class FormWidget(BaseWidget):
             }),
         )
 
+        # This returns a HTML section tag that contains the form.
         return html.Section(
 
+            # All styles are included here if load_css is True.
             html.Style(
                 styles.render()
             ) if self.load_css is True else html.Style(),
 
             html.Form(
+                self._element['first'],  # First loaded elements
                 html.Div(
                     html.Label('Username'),
                     html.Input(type='text', name='username',
@@ -123,13 +141,20 @@ class FormWidget(BaseWidget):
                 ),
                 html.Div(
                     html.Label('Password'),
-                    html.Input(type='password', name='password', placeholder='****'
-                               ),
+                    html.Input()
+                    .type('password')
+                    .name('password')
+                    .placeholder('********')
                 ),
                 html.Div(
-                    html.Button('Submit', type='submit'),
+                    html.Button('Submit')
+                    .type('submit'),
                 ),
-            ).id('form-object'),
+                self._element['last'],  # Last loaded elements
+            )
+            .attr('action', self._action)
+            .attr('method', self._method)
+            .id('form-object'),
         )
 
     def __get_registrationform(self):
@@ -176,6 +201,8 @@ class FormWidget(BaseWidget):
             ) if self.load_css is True else html.Style(),
 
             html.Form(
+                self._element['first'],
+
                 html.Div(
                     html.Label('Username'),
                     html.Input(type='text', name='username',
@@ -189,5 +216,7 @@ class FormWidget(BaseWidget):
                         html.Button('Submit', type='submit'),
                     ),
                 ),
+
+                self._element['last'],  # Last loaded elements
             ).id('form-object'),
         )
