@@ -74,8 +74,10 @@ nav:
       - Introduction: components/introduction.md
       - HTML:
           - Introduction: components/html/introduction.md
+          - Attributes: components/html/attributes.md
       - CSS:
           - Introduction: components/css/introduction.md
+          - Attributes: components/css/attributes.md
       - JavaScript:
           - Introduction: components/js/introduction.md
   - Customization: 

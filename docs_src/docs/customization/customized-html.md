@@ -2,7 +2,7 @@
 
 You can customize the built-in components or create your own components by subclassing the `fronty.html.BaseElement` class. Let's see how to create a custom component.
 
-```py linenums="1" title="custom_components.py"
+```py linenums="1" title="custom_components.py" hl_lines="11 12 14 15 16 17"
 
 from fronty.html import (
     BaseElement,

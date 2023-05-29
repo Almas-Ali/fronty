@@ -2,7 +2,7 @@
 
 As fronty is a very simple framework, it is very easy to use. You can easily create a website using. It
 is mainly focused on the frontend part. So, we haven't add any backend features. But, you can easily add
-backend features using any backend framework like Flask, Django, etc.
+backend features using any backend framework like Flask, Django, Fastapi etc.
 
 But, we are working on a backend framework for fronty named [Backkr][backkr]. And we are also
 working on a database framework named [Flexdb][flexdb]. So, you can easily create a full stack
