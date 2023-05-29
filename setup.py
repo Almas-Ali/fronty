@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name='fronty',
-    version='0.0.3',
+    version='0.0.4',
     description='A frontend web framework',
     long_description_content_type='text/markdown',
     long_description=long_description,
@@ -14,7 +14,7 @@ setup(
     url='https://github.com/Almas-Ali/fronty',
     packages=find_packages(),
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
