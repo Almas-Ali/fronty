@@ -82,6 +82,9 @@ nav:
           - Introduction: components/js/introduction.md
   - Customization: 
       - HTML Customization: customization/customized-html.md
+  - Widgets:
+      - Introduction: widgets/introduction.md
+      - Attributes: widgets/attributes.md
   - Projects:
       - Starter Project: projects/starter-project.md
       - Bootstrap Integration: projects/bootstrap-integration.md
