@@ -102,7 +102,7 @@
             
   <!-- the following line is displayed in the announce bar -->
 <!-- keep length under 164 characters (less HTML tags) to fit on 1280px desktop window -->
-<strong>Fronty:</strong> version 0.0.3 (alpha)!
+<strong>Fronty:</strong> version 0.0.4 (alpha) is available for testing.
 
           </div>
           
@@ -408,6 +408,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/html/attributes.html" class="md-nav__link">
+        Attributes
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -450,6 +464,20 @@
     <li class="md-nav__item">
       <a href="../components/css/introduction.html" class="md-nav__link">
         Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/css/attributes.html" class="md-nav__link">
+        Attributes
       </a>
     </li>
   
@@ -750,14 +778,14 @@
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">children</span><span class="p">,</span> <span class="o">**</span><span class="n">attributes</span><span class="p">):</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;custom-component&#39;</span><span class="p">,</span> <span class="o">*</span><span class="n">children</span><span class="p">,</span> <span class="o">**</span><span class="n">attributes</span><span class="p">)</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>        <span class="c1"># Optional attributes if you want to add any custom attributes</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_attributes</span><span class="p">[</span><span class="s1">&#39;custom-attribute&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;custom-value&#39;</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="c1"># Optional children if you want to add any custom children</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_children</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a>            <span class="n">Text</span><span class="p">(</span><span class="s1">&#39;This is a custom component.&#39;</span><span class="p">),</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a>        <span class="p">]</span>
-</span></code></pre></div></td></tr></table></div>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="hll">        <span class="c1"># Optional attributes if you want to add any custom attributes</span>
+</span></span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">_attributes</span><span class="p">[</span><span class="s1">&#39;custom-attribute&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;custom-value&#39;</span>
+</span></span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="hll">        <span class="c1"># Optional children if you want to add any custom children</span>
+</span></span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">_children</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="hll">            <span class="n">Text</span><span class="p">(</span><span class="s1">&#39;This is a custom component.&#39;</span><span class="p">),</span>
+</span></span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="hll">        <span class="p">]</span>
+</span></span></code></pre></div></td></tr></table></div>
 <p>Now, you can use this component in your application.</p>
 <div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">main.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>

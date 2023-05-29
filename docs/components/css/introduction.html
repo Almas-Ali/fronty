@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://almas-ali.github.io/fronty/components/css/introduction.html">
       
       
-        <link rel="prev" href="../html/introduction.html">
+        <link rel="prev" href="../html/attributes.html">
       
       
-        <link rel="next" href="../js/introduction.html">
+        <link rel="next" href="attributes.html">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
@@ -102,7 +102,7 @@
             
   <!-- the following line is displayed in the announce bar -->
 <!-- keep length under 164 characters (less HTML tags) to fit on 1280px desktop window -->
-<strong>Fronty:</strong> version 0.0.3 (alpha)!
+<strong>Fronty:</strong> version 0.0.4 (alpha) is available for testing.
 
           </div>
           
@@ -410,6 +410,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html/attributes.html" class="md-nav__link">
+        Attributes
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -492,10 +506,45 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#important-css-components" class="md-nav__link">
+    Important CSS Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-css-components" class="md-nav__link">
+    Using CSS Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-style-component" class="md-nav__link">
+    Using Style Component
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="attributes.html" class="md-nav__link">
+        Attributes
+      </a>
     </li>
   
 
@@ -751,6 +800,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#important-css-components" class="md-nav__link">
+    Important CSS Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-css-components" class="md-nav__link">
+    Using CSS Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-style-component" class="md-nav__link">
+    Using Style Component
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -772,6 +842,280 @@
 
 <h1 id="css-components">CSS Components<a class="headerlink" href="#css-components" title="Permanent link">&para;</a></h1>
 <h2 id="what-are-css-components">What are CSS Components?<a class="headerlink" href="#what-are-css-components" title="Permanent link">&para;</a></h2>
+<p>CSS components are a list of dictionary that can be used to create a CSS styling fast and easily. These components are very easy to use and can be used to create a CSS styling in a few lines of code. Here is lots of customization options are available. Let's get started.</p>
+<h2 id="important-css-components">Important CSS Components<a class="headerlink" href="#important-css-components" title="Permanent link">&para;</a></h2>
+<p><code>CSS</code> : To create a css in a html website.</p>
+<p><code>Selector</code> : To create a selector in a html website. It is like query selector in JavaScript.</p>
+<p><code>Style</code> : To create a style in a html website.</p>
+<h2 id="using-css-components">Using CSS Components<a class="headerlink" href="#using-css-components" title="Permanent link">&para;</a></h2>
+<p>To use CSS components, you have to import the <code>fronty.css</code> module methods. <code>CSS</code>, <code>Selector</code> and <code>Style</code> are the methods of <code>fronty.css</code> module. Here is an example of using <code>fronty.css</code> module methods:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Example of importing fronty.css module</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">fronty.css</span> <span class="kn">import</span> <span class="n">CSS</span><span class="p">,</span> <span class="n">Selector</span><span class="p">,</span> <span class="n">Style</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="hll"><span class="n">css</span> <span class="o">=</span> <span class="n">CSS</span><span class="p">(</span>
+</span></span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="hll">    <span class="n">Selector</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)</span>
+</span></span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="hll"><span class="p">)</span>
+</span></span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">css</span><span class="o">.</span><span class="n">render</span><span class="p">())</span>
+</span></code></pre></div></td></tr></table></div>
+<p>With this you can create a selector in a html website. But it is not enough to create a css file. You have to add some properties to the selector. To add properties to the selector, you have to use the <code>properties</code> attribute of the <code>Selector</code> element. Here is an example:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Example of properties attribute</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">fronty.css</span> <span class="kn">import</span> <span class="n">CSS</span><span class="p">,</span> <span class="n">Selector</span><span class="p">,</span> <span class="n">Style</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">css</span> <span class="o">=</span> <span class="n">CSS</span><span class="p">(</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>    <span class="n">Selector</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="hll">    <span class="o">.</span><span class="n">properties</span><span class="p">({</span>
+</span></span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="hll">        <span class="s2">&quot;background-color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
+</span></span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="hll">        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span>
+</span></span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="hll">        <span class="s2">&quot;font-size&quot;</span><span class="p">:</span> <span class="s2">&quot;20px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="hll">        <span class="s2">&quot;font-weight&quot;</span><span class="p">:</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+</span></span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="hll">        <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="s2">&quot;10px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="hll">        <span class="s2">&quot;border-radius&quot;</span><span class="p">:</span> <span class="s2">&quot;5px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="hll">        <span class="s2">&quot;border&quot;</span><span class="p">:</span> <span class="s2">&quot;1px solid black&quot;</span>
+</span></span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="hll">    <span class="p">})</span>
+</span></span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="p">)</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">css</span><span class="o">.</span><span class="n">render</span><span class="p">())</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Output:</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output of the above code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nt">body</span><span class="p">{</span><span class="k">background-color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span><span class="k">color</span><span class="p">:</span><span class="kc">white</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="k">font-weight</span><span class="p">:</span><span class="kc">bold</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Here we have provided a dictionary in <code>properties</code> method of <code>Selector</code> class. The keys of the dictionary are the properties of the CSS component and the values of the dictionary are the values of the properties. You can add as many properties as you want. You can also add multiple selectors in a CSS file. Here is an example:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Example of multiple selectors</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">fronty.css</span> <span class="kn">import</span> <span class="n">CSS</span><span class="p">,</span> <span class="n">Selector</span><span class="p">,</span> <span class="n">Style</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">css</span> <span class="o">=</span> <span class="n">CSS</span><span class="p">(</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="hll">    <span class="n">Selector</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)</span>
+</span></span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="hll">    <span class="o">.</span><span class="n">properties</span><span class="p">({</span>
+</span></span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="hll">        <span class="s2">&quot;background-color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="hll">        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="hll">        <span class="s2">&quot;font-size&quot;</span><span class="p">:</span> <span class="s2">&quot;20px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="hll">        <span class="s2">&quot;font-weight&quot;</span><span class="p">:</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="hll">        <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="s2">&quot;10px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="hll">        <span class="s2">&quot;border-radius&quot;</span><span class="p">:</span> <span class="s2">&quot;5px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="hll">        <span class="s2">&quot;border&quot;</span><span class="p">:</span> <span class="s2">&quot;1px solid black&quot;</span>
+</span></span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="hll">    <span class="p">}),</span>
+</span></span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="hll">    <span class="n">Selector</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span>
+</span></span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="hll">    <span class="o">.</span><span class="n">properties</span><span class="p">({</span>
+</span></span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="hll">        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="hll">        <span class="s2">&quot;font-size&quot;</span><span class="p">:</span> <span class="s2">&quot;30px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="hll">        <span class="s2">&quot;font-weight&quot;</span><span class="p">:</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="hll">        <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="s2">&quot;10px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="hll">        <span class="s2">&quot;border-radius&quot;</span><span class="p">:</span> <span class="s2">&quot;5px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="hll">        <span class="s2">&quot;border&quot;</span><span class="p">:</span> <span class="s2">&quot;1px solid black&quot;</span>
+</span></span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="hll">    <span class="p">})</span>
+</span></span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23"></a><span class="p">)</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24"></a>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">css</span><span class="o">.</span><span class="n">render</span><span class="p">())</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Output:</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output of the above code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">body</span><span class="p">{</span><span class="k">background-color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span><span class="k">color</span><span class="p">:</span><span class="kc">white</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="k">font-weight</span><span class="p">:</span><span class="kc">bold</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">}</span><span class="nt">h1</span><span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="kc">blue</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span><span class="k">font-weight</span><span class="p">:</span><span class="kc">bold</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>You can also add multiple properties in a selector. Here is an example:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Example of multiple properties</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span>
+<span class="normal"><a href="#__codelineno-5-22">22</a></span>
+<span class="normal"><a href="#__codelineno-5-23">23</a></span>
+<span class="normal"><a href="#__codelineno-5-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">fronty.css</span> <span class="kn">import</span> <span class="n">CSS</span><span class="p">,</span> <span class="n">Selector</span><span class="p">,</span> <span class="n">Style</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="n">css</span> <span class="o">=</span> <span class="n">CSS</span><span class="p">(</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>    <span class="n">Selector</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="hll">    <span class="o">.</span><span class="n">properties</span><span class="p">({</span>
+</span></span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="hll">        <span class="s2">&quot;background-color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="hll">        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="hll">        <span class="s2">&quot;font-size&quot;</span><span class="p">:</span> <span class="s2">&quot;20px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="hll">        <span class="s2">&quot;font-weight&quot;</span><span class="p">:</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="hll">        <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="s2">&quot;10px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="hll">        <span class="s2">&quot;border-radius&quot;</span><span class="p">:</span> <span class="s2">&quot;5px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="hll">        <span class="s2">&quot;border&quot;</span><span class="p">:</span> <span class="s2">&quot;1px solid black&quot;</span>
+</span></span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="hll">    <span class="p">})</span>
+</span></span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="hll">    <span class="o">.</span><span class="n">properties</span><span class="p">({</span>
+</span></span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="hll">        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="hll">        <span class="s2">&quot;font-size&quot;</span><span class="p">:</span> <span class="s2">&quot;30px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="hll">        <span class="s2">&quot;font-weight&quot;</span><span class="p">:</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="hll">        <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="s2">&quot;10px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19"></a><span class="hll">        <span class="s2">&quot;border-radius&quot;</span><span class="p">:</span> <span class="s2">&quot;5px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="hll">        <span class="s2">&quot;border&quot;</span><span class="p">:</span> <span class="s2">&quot;1px solid black&quot;</span>
+</span></span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21"></a><span class="hll">    <span class="p">})</span>
+</span></span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22"></a><span class="p">)</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23"></a>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24"></a><span class="nb">print</span><span class="p">(</span><span class="n">css</span><span class="o">.</span><span class="n">render</span><span class="p">())</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Output:</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output of the above code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nt">body</span><span class="p">{</span><span class="k">background-color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span><span class="k">color</span><span class="p">:</span><span class="kc">blue</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span><span class="k">font-weight</span><span class="p">:</span><span class="kc">bold</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Here we can see, only the unique properties are added to the selector and the duplicate properties are overwritten with the new properties.</p>
+<h2 id="using-style-component">Using Style Component<a class="headerlink" href="#using-style-component" title="Permanent link">&para;</a></h2>
+<p>You can also use the <code>Style</code> component to create a CSS file. Here is an example:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Example of Style component</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">8</a></span>
+<span class="normal"><a href="#__codelineno-7-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kn">from</span> <span class="nn">fronty.css</span> <span class="kn">import</span> <span class="n">CSS</span><span class="p">,</span> <span class="n">Selector</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="kn">from</span> <span class="nn">fronty.html</span> <span class="kn">import</span> <span class="n">Style</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="n">css</span> <span class="o">=</span> <span class="n">CSS</span><span class="p">(</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="hll">    <span class="n">Style</span><span class="p">(</span><span class="s1">&#39;body{background-color:red;color:white;font-size:20px;font-weight:bold;padding:10px;border-radius:5px;border:1px solid black}&#39;</span><span class="p">),</span>
+</span></span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="hll">    <span class="n">Style</span><span class="p">(</span><span class="s1">&#39;h1{color:blue;font-size:30px;font-weight:bold;padding:10px;border-radius:5px;border:1px solid black}&#39;</span><span class="p">)</span>
+</span></span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="p">)</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">css</span><span class="o">.</span><span class="n">render</span><span class="p">())</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Output:</p>
+<div class="language-css highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output of the above code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="o">&lt;</span><span class="nt">style</span><span class="w"> </span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span><span class="w"> </span><span class="nt">href</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="o">&gt;</span><span class="nt">body</span><span class="p">{</span><span class="k">background-color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span><span class="k">color</span><span class="p">:</span><span class="kc">white</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="k">font-weight</span><span class="p">:</span><span class="kc">bold</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">}</span><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;&lt;</span><span class="nt">style</span><span class="w"> </span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span><span class="w"> </span><span class="nt">href</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="o">&gt;</span><span class="nt">h1</span><span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="kc">blue</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span><span class="k">font-weight</span><span class="p">:</span><span class="kc">bold</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">}</span><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+<p>This is very unrealistic to create a style component like this. But you can use this method to add a CSS to your website. Here is an example:</p>
+<div class="language-py highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Example of Style component</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span>
+<span class="normal"><a href="#__codelineno-9-16">16</a></span>
+<span class="normal"><a href="#__codelineno-9-17">17</a></span>
+<span class="normal"><a href="#__codelineno-9-18">18</a></span>
+<span class="normal"><a href="#__codelineno-9-19">19</a></span>
+<span class="normal"><a href="#__codelineno-9-20">20</a></span>
+<span class="normal"><a href="#__codelineno-9-21">21</a></span>
+<span class="normal"><a href="#__codelineno-9-22">22</a></span>
+<span class="normal"><a href="#__codelineno-9-23">23</a></span>
+<span class="normal"><a href="#__codelineno-9-24">24</a></span>
+<span class="normal"><a href="#__codelineno-9-25">25</a></span>
+<span class="normal"><a href="#__codelineno-9-26">26</a></span>
+<span class="normal"><a href="#__codelineno-9-27">27</a></span>
+<span class="normal"><a href="#__codelineno-9-28">28</a></span>
+<span class="normal"><a href="#__codelineno-9-29">29</a></span>
+<span class="normal"><a href="#__codelineno-9-30">30</a></span>
+<span class="normal"><a href="#__codelineno-9-31">31</a></span>
+<span class="normal"><a href="#__codelineno-9-32">32</a></span>
+<span class="normal"><a href="#__codelineno-9-33">33</a></span>
+<span class="normal"><a href="#__codelineno-9-34">34</a></span>
+<span class="normal"><a href="#__codelineno-9-35">35</a></span>
+<span class="normal"><a href="#__codelineno-9-36">36</a></span>
+<span class="normal"><a href="#__codelineno-9-37">37</a></span>
+<span class="normal"><a href="#__codelineno-9-38">38</a></span>
+<span class="normal"><a href="#__codelineno-9-39">39</a></span>
+<span class="normal"><a href="#__codelineno-9-40">40</a></span>
+<span class="normal"><a href="#__codelineno-9-41">41</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kn">from</span> <span class="nn">fronty.css</span> <span class="kn">import</span> <span class="n">CSS</span><span class="p">,</span> <span class="n">Selector</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="kn">from</span> <span class="nn">fronty.html</span> <span class="kn">import</span> <span class="n">Html</span><span class="p">,</span> <span class="n">Head</span><span class="p">,</span> <span class="n">Title</span><span class="p">,</span> <span class="n">Meta</span><span class="p">,</span> <span class="n">Style</span><span class="p">,</span> <span class="n">Body</span><span class="p">,</span> <span class="n">H1</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="n">css</span> <span class="o">=</span> <span class="n">CSS</span><span class="p">(</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="hll">    <span class="n">Selector</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)</span>
+</span></span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="hll">    <span class="o">.</span><span class="n">properties</span><span class="p">({</span>
+</span></span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="hll">        <span class="s2">&quot;background-color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="hll">        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="hll">        <span class="s2">&quot;font-size&quot;</span><span class="p">:</span> <span class="s2">&quot;20px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="hll">        <span class="s2">&quot;font-weight&quot;</span><span class="p">:</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="hll">        <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="s2">&quot;10px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="hll">        <span class="s2">&quot;border-radius&quot;</span><span class="p">:</span> <span class="s2">&quot;5px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13"></a><span class="hll">        <span class="s2">&quot;border&quot;</span><span class="p">:</span> <span class="s2">&quot;1px solid black&quot;</span>
+</span></span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="hll">    <span class="p">}),</span>
+</span></span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="hll">    <span class="n">Selector</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span>
+</span></span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16"></a><span class="hll">    <span class="o">.</span><span class="n">properties</span><span class="p">({</span>
+</span></span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17"></a><span class="hll">        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18"></a><span class="hll">        <span class="s2">&quot;font-size&quot;</span><span class="p">:</span> <span class="s2">&quot;30px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19"></a><span class="hll">        <span class="s2">&quot;font-weight&quot;</span><span class="p">:</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20"></a><span class="hll">        <span class="s2">&quot;padding&quot;</span><span class="p">:</span> <span class="s2">&quot;10px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21"></a><span class="hll">        <span class="s2">&quot;border-radius&quot;</span><span class="p">:</span> <span class="s2">&quot;5px&quot;</span><span class="p">,</span>
+</span></span><span id="__span-9-22"><a id="__codelineno-9-22" name="__codelineno-9-22"></a><span class="hll">        <span class="s2">&quot;border&quot;</span><span class="p">:</span> <span class="s2">&quot;1px solid black&quot;</span>
+</span></span><span id="__span-9-23"><a id="__codelineno-9-23" name="__codelineno-9-23"></a><span class="hll">    <span class="p">}),</span>
+</span></span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24"></a><span class="p">)</span>
+</span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25"></a>
+</span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26"></a><span class="o">...</span>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27"></a><span class="c1"># Now we will add the style component to the html component</span>
+</span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28"></a>
+</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29"></a><span class="n">html</span> <span class="o">=</span> <span class="n">Html</span><span class="p">(</span>
+</span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30"></a>    <span class="n">Head</span><span class="p">(</span>
+</span><span id="__span-9-31"><a id="__codelineno-9-31" name="__codelineno-9-31"></a>        <span class="n">Title</span><span class="p">(</span><span class="s1">&#39;My Website&#39;</span><span class="p">),</span>
+</span><span id="__span-9-32"><a id="__codelineno-9-32" name="__codelineno-9-32"></a>        <span class="n">Meta</span><span class="p">(</span><span class="n">charset</span><span class="o">=</span><span class="s2">&quot;UTF-8&quot;</span><span class="p">),</span>
+</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33"></a>        <span class="n">Meta</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;viewport&quot;</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">),</span>
+</span><span id="__span-9-34"><a id="__codelineno-9-34" name="__codelineno-9-34"></a><span class="hll">        <span class="n">Style</span><span class="p">(</span><span class="n">css</span><span class="o">.</span><span class="n">render</span><span class="p">())</span>
+</span></span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35"></a>    <span class="p">),</span>
+</span><span id="__span-9-36"><a id="__codelineno-9-36" name="__codelineno-9-36"></a>    <span class="n">Body</span><span class="p">(</span>
+</span><span id="__span-9-37"><a id="__codelineno-9-37" name="__codelineno-9-37"></a>        <span class="n">H1</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">)</span>
+</span><span id="__span-9-38"><a id="__codelineno-9-38" name="__codelineno-9-38"></a>    <span class="p">)</span>
+</span><span id="__span-9-39"><a id="__codelineno-9-39" name="__codelineno-9-39"></a><span class="p">)</span>
+</span><span id="__span-9-40"><a id="__codelineno-9-40" name="__codelineno-9-40"></a>
+</span><span id="__span-9-41"><a id="__codelineno-9-41" name="__codelineno-9-41"></a><span class="nb">print</span><span class="p">(</span><span class="n">html</span><span class="o">.</span><span class="n">render</span><span class="p">())</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Output:</p>
+<div class="language-html highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Output of the above code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;&lt;</span><span class="nt">head</span><span class="p">&gt;&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My Website<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span><span class="nt">body</span><span class="p">{</span><span class="k">background-color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span><span class="k">color</span><span class="p">:</span><span class="kc">white</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="k">font-weight</span><span class="p">:</span><span class="kc">bold</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">}</span><span class="nt">h1</span><span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="kc">blue</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span><span class="k">font-weight</span><span class="p">:</span><span class="kc">bold</span><span class="p">;</span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span><span class="k">border-radius</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">}&lt;/</span><span class="nt">style</span><span class="p">&gt;&lt;/</span><span class="nt">head</span><span class="p">&gt;&lt;</span><span class="nt">body</span><span class="p">&gt;&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div></td></tr></table></div>
+<p>This is how you can add a CSS to your website fast, easily and efficiently with <code>Style</code> component.</p>
 
 
   
