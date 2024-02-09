@@ -1,4 +1,4 @@
-__version__ = '0.0.3'
+__version__ = '0.0.6'
 
 class Fronty:
     def __init__(self, file_path: str) -> None:
