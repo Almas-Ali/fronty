@@ -45,6 +45,9 @@ extra:
     provider: google
     property: G-XJC75ENC9N
 
+  version:
+    provider: mike
+
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/Almas-Ali/fronty
@@ -58,7 +61,7 @@ extra:
     - icon: fontawesome/solid/globe
       link: https://almasali.net
 
-  generator: false
+  generator: true
 
 copyright: Build with love for the community © 2023
 
@@ -72,16 +75,19 @@ nav:
   - Quick Start: quick-start.md
   - Components:
       - Introduction: components/introduction.md
-      - HTML:
+      - HTML Components:
           - Introduction: components/html/introduction.md
           - Attributes: components/html/attributes.md
-      - CSS:
+      - CSS Components:
           - Introduction: components/css/introduction.md
           - Attributes: components/css/attributes.md
-      - JavaScript:
+      - JavaScript Components:
           - Introduction: components/js/introduction.md
   - Customization: 
+      - Introduction: customization/introduction.md
       - HTML Customization: customization/customized-html.md
+      - CSS Customization: customization/customized-css.md
+      - JavaScript Customization: customization/customized-js.md
   - Widgets:
       - Introduction: widgets/introduction.md
       - Attributes: widgets/attributes.md
