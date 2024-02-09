@@ -129,7 +129,7 @@ class FormWidget(BaseWidget):
 
             # All styles are included here if load_css is True.
             html.Style(
-                styles.render()
+                styles
             ) if self.load_css is True else html.Style(),
 
             html.Form(
@@ -197,7 +197,7 @@ class FormWidget(BaseWidget):
         return html.Section(
 
             html.Style(
-                styles.render()
+                styles
             ) if self.load_css is True else html.Style(),
 
             html.Form(

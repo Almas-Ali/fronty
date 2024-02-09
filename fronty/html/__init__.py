@@ -1,3 +1,6 @@
+from typing import Union
+
+
 class BaseElement:
     '''Base element.'''
 
@@ -320,6 +323,12 @@ class Style(BaseElement):
         self.attributes['type'] = 'text/css' if 'type' not in attributes else attributes['type']
         self.attributes['href'] = attributes['href'] if 'href' in attributes else ''
         self.attributes['rel'] = 'stylesheet' if 'rel' not in attributes else attributes['rel']
+
+    def render(self):
+        '''render all inner css.Selector elements'''
+        _styles = ''.join(child.render() for child in self.children)
+        _is_space = ' ' if self._render_attributes() else ''
+        return f'<{self.tag}{_is_space}{self._render_attributes()}>{_styles}</{self.tag}>'
 
 
 class Body(BaseElement):
@@ -769,3 +778,67 @@ class Empty(BaseElement):
 
     def __str__(self):
         return self.render()
+
+
+AnyHTMLElement = Union[
+    Html,
+    Head,
+    Title,
+    Script,
+    Style,
+    Body,
+    Meta,
+    Link,
+    Anchor,
+    Image,
+    Button,
+    Input,
+    Text,
+    Break,
+    Form,
+    Label,
+    Select,
+    Option,
+    Table,
+    Thead,
+    Tbody,
+    Tr,
+    Th,
+    Td,
+    H1,
+    H2,
+    H3,
+    H4,
+    H5,
+    H6,
+    Ul,
+    Ol,
+    Li,
+    Span,
+    Div,
+    Nav,
+    Footer,
+    Header,
+    Section,
+    Article,
+    Aside,
+    Main,
+    Figure,
+    Figcaption,
+    Dl,
+    Dt,
+    Dd,
+    Small,
+    Time,
+    Strong,
+    Em,
+    Mark,
+    Code,
+    Pre,
+    Blockquote,
+    Iframe,
+    Video,
+    Audio,
+    Source,
+    Empty,
+]

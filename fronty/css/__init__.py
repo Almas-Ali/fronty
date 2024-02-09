@@ -3,7 +3,7 @@ class BaseCSS(object):
         self.css = css
 
     def __str__(self):
-        return '<BaseCSS Object>'
+        return self.render()
 
     def __add__(self, other):
         return BaseCSS(self.css + other.css)
@@ -12,7 +12,7 @@ class BaseCSS(object):
         return BaseCSS(other.css + self.css)
 
     def __repr__(self):
-        return f'<BaseCSS {self.css}>'
+        return f'<CSS {self.css}>'
 
     def __call__(self):
         return self

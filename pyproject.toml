@@ -1,0 +1,67 @@
+[project]
+name = "fronty"
+dynamic = ["version"]
+dependencies = []
+requires-python = ">=3.7"
+authors = [{name = "Md. Almas Ali", email = "almaspr3@gmail.com"}]
+maintainers = [{name = "Md. Almas Ali", email = "almaspr3@gmail.com"}]
+description = "A frontend web framework"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = [
+    "web framework",
+    "frontend framework",
+    "frontend",
+    "web",
+    "framework",
+    "html",
+    "css",
+    "javascript",
+    "simple",
+    "easy",
+    "fast",
+    "lightweight",
+    "light",
+    "light-weight",
+    "quick",
+    "rapid",
+]
+classifiers = [
+    "Topic :: Internet",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Almas-Ali/fronty"
+Documentation = "https://github.com/Almas-Ali/fronty#readme"
+Repository = "https://github.com/Almas-Ali/fronty"
+"Bug Tracker" = "https://github.com/Almas-Ali/fronty/issues"
+
+
+[project.scripts]
+fronty = "fronty.cli:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch.version]
+path = "fronty/__init__.py"
+
+
+[tool.ruff.format]
+quote-style = "single"
