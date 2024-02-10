@@ -369,6 +369,10 @@ class Link(BaseElement):
         self.attributes['rel'] = 'stylesheet' if 'rel' not in attributes else attributes['rel']
         self.attributes['href'] = href
 
+    def render(self):
+        _is_space = ' ' if self._render_attributes() else ''
+        return f'<{self.tag}{_is_space}{self._render_attributes()}>'
+
 
 class Anchor(BaseElement):
     '''Anchor element.'''
@@ -383,6 +387,10 @@ class Image(BaseElement):
     def __init__(self, src, *children, **attributes):
         super().__init__('img', *children, **attributes)
         self.attributes['src'] = src
+
+    def render(self):
+        _is_space = ' ' if self._render_attributes() else ''
+        return f'<{self.tag}{_is_space}{self._render_attributes()}>'
 
 
 class Button(BaseElement):
@@ -757,6 +765,13 @@ class Source(BaseElement):
         super().__init__('source', *children, **attributes)
 
 
+class I(BaseElement):
+    '''I element.'''
+
+    def __init__(self, *children, **attributes):
+        super().__init__('i', *children, **attributes)
+
+
 class Empty(BaseElement):
     '''Empty element.'''
 
@@ -840,5 +855,6 @@ AnyHTMLElement = Union[
     Video,
     Audio,
     Source,
+    I,
     Empty,
 ]
