@@ -5,7 +5,7 @@ from fronty import css
 from fronty.widgets import BaseWidget
 
 
-class NavsWidget(BaseWidget):
+class NavWidget(BaseWidget):
     '''This is the navigation bar widget.'''
 
     def __init__(self, load_css: bool = False, *args, **kwargs) -> None:
