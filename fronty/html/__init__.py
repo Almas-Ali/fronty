@@ -321,7 +321,7 @@ class Style(BaseElement):
     def __init__(self, *children, **attributes):
         super().__init__('style', *children, **attributes)
         self.attributes['type'] = 'text/css' if 'type' not in attributes else attributes['type']
-        self.attributes['href'] = attributes['href'] if 'href' in attributes else ''
+        # self.attributes['href'] = attributes['href'] if 'href' in attributes else ''
         self.attributes['rel'] = 'stylesheet' if 'rel' not in attributes else attributes['rel']
 
     def render(self):
@@ -398,7 +398,7 @@ class Button(BaseElement):
 
     def __init__(self, *children, **attributes):
         super().__init__('button', *children, **attributes)
-        self.attributes['type'] = 'button'
+        self.attributes['type'] = 'button' if 'type' not in attributes else attributes['type']
 
 
 class Input(BaseElement):
@@ -795,6 +795,15 @@ class Empty(BaseElement):
         return self.render()
 
 
+class Textarea(BaseElement):
+    '''Textarea element.'''
+
+    def __init__(self, col: int = 5, row: int = 5, *children, **attributes):
+        super().__init__('textarea', *children, **attributes)
+        self.attributes['cols'] = col
+        self.attributes['rows'] = row
+
+
 AnyHTMLElement = Union[
     Html,
     Head,
@@ -857,4 +866,5 @@ AnyHTMLElement = Union[
     Source,
     I,
     Empty,
+    Textarea,
 ]
