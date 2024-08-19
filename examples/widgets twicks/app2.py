@@ -8,7 +8,7 @@ from fronty.widgets.forms import (
     SearchForm,
     SubscribeForm,
 )
-from fronty.widgets.navs import NavsWidget
+from fronty.widgets.navs import NavWidget
 
 from flask import Flask
 
@@ -36,10 +36,10 @@ def style() -> css.CSS:
     )
 
 
-def new_navbar() -> NavsWidget:
+def new_navbar() -> NavWidget:
     '''This is the navigation bar of the page.'''
 
-    navbar = NavsWidget(load_css=True)
+    navbar = NavWidget(load_css=True)
     navbar.add_nav_link('Home', '/').add_style_last_element(
         color='black',
         font_size='16px',
