@@ -75,10 +75,10 @@ class TestElements(unittest.TestCase):
                 .attr('disabled', False)
                 .attr('readonly', False)
                 ,
-            ),
+            ).render(),
 
             # Expected result
-            '<div><input type="text" name="InputElement" value="InputValue" placeholder="InputPlaceholder" required="True" disable="False" readonly="False"></div>'
+            '<div><input type="text" name="InputElement" value="InputValue" placeholder="InputPlaceholder" required="True" disabled="False" readonly="False"></div>'
         )
 
 
