@@ -101,19 +101,21 @@ def home():
     ).render()
 
 
+form_style: dict[str, str] = {
+    'display': 'flex',
+    'flex_direction': 'column',
+    'justify_content': 'center',
+    'align_items': 'center',
+    'margin': '10px',
+}
+
 @app.route('/register')
 def register():
     return (
         layout(
             html.Div(
                 RegistrationForm(load_css=True)
-            ).style(
-                display='flex',
-                flex_direction='column',
-                justify_content='center',
-                align_items='center',
-                margin='10px',
-            )
+            ).style(**form_style)
         )
         .add_title('Register')
         .render()
@@ -126,13 +128,7 @@ def login():
         layout(
             html.Div(
                 LoginForm(load_css=True)
-            ).style(
-                display='flex',
-                flex_direction='column',
-                justify_content='center',
-                align_items='center',
-                margin='10px',
-            )
+            ).style(**form_style)
         )
         .add_title('Login')
         .render()
@@ -145,13 +141,7 @@ def contact():
         layout(
             html.Div(
                 ContactForm(load_css=True)
-            ).style(
-                display='flex',
-                flex_direction='column',
-                justify_content='center',
-                align_items='center',
-                margin='10px',
-            )
+            ).style(**form_style)
         )
         .add_title('Contact')
         .render()
@@ -164,13 +154,7 @@ def search():
         layout(
             html.Div(
                 SearchForm(load_css=True)
-            ).style(
-                display='flex',
-                flex_direction='column',
-                justify_content='center',
-                align_items='center',
-                margin='10px',
-            )
+            ).style(**form_style)
         )
         .add_title('Search')
         .render()
@@ -183,13 +167,7 @@ def subscribe():
         layout(
             html.Div(
                 SubscribeForm(load_css=True)
-            ).style(
-                display='flex',
-                flex_direction='column',
-                justify_content='center',
-                align_items='center',
-                margin='10px',
-            )
+            ).style(**form_style)
         )
         .add_title('Subscribe')
         .render()
